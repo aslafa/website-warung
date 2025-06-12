@@ -1,0 +1,80 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b03431;
+  padding: 10px 30px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.nav-links li a i {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signin-btn {
+  background-color: #d6ac3d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar > * {
+  flex: 1;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+.nav-actions {
+  justify-content: flex-end;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cart i {
+  font-size: 20px;
+}

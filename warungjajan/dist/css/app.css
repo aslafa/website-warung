@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar {
+  background: #b03431 !important;
+}
+
+.navbar-brand i{
+    color: #ffc107 !important;
+}
+
+#welcome{
+    background-color: #b03431;
+}
+
+.footer {
+  background-color: #b03431; /* Biru gelap */
+  color: white;
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.footer-nav a:not(:last-child):after {
+  content: "|";
+  margin-left: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.copyright {
+  background-color: white;
+  color: #555;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}

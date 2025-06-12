@@ -1,0 +1,260 @@
+.left-panel {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 10px;
+}
+
+.logo-container img {
+  width: 50%;
+  /* Adjust as needed */
+  height: auto;
+  object-fit: contain;
+}
+
+.tagline h1 {
+  font-size: 35px;
+  color: #d6ac3d;
+  margin-bottom: 10px;
+}
+
+.tagline p {
+  font-size: 16px;
+  color: #d6ac3d;
+  margin: 0;
+}
+
+.right-panel {
+  flex: 1;
+  background-color: #d6ac3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 380px;
+  /* Adjust max width as needed */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.login-header h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.login-qr-btn {
+  background-color: #f0f0f0;
+  /* Light gray background */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  /* More rounded */
+  padding: 5px 12px;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-qr-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  /* Slightly off-white input background */
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.login-btn {
+  background-color: #d6ac3d;
+  /* Lighter gold for button */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #d6ac3d;
+  /* Darker gold on hover */
+}
+
+.forgot-password {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.forgot-password a {
+  color: #007bff;
+  /* Blue link */
+  text-decoration: none;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #eee;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 0.5em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 0.5em;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.social-login button {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.social-login button:hover {
+  background-color: #e0e0e0;
+}
+
+.social-login button.facebook {
+  color: #1877f2;
+  /* Facebook blue */
+}
+
+.social-login button.google {
+  color: #ea4335;
+  /* Google red */
+}
+
+.social-login button i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.register-link {
+  font-size: 15px;
+  color: #555;
+}
+
+.register-link a {
+  color: #d6ac3d;
+  /* Blue link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Font Awesome for social media icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    /* Stack panels vertically */
+    overflow-y: auto;
+    /* Allow vertical scrolling */
+  }
+
+  .left-panel,
+  .right-panel {
+    flex: none;
+    /* Disable flex growth */
+    width: 100%;
+    /* Take full width */
+    min-height: auto;
+    /* Remove min-height constraint */
+  }
+
+  .left-panel {
+    padding-top: 50px;
+    /* Add some space from top */
+    padding-bottom: 30px;
+  }
+
+  .right-panel {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #f0f0f0;
+    /* Change background for mobile */
+  }
+
+  .login-card {
+    margin: 0 auto;
+    /* Center card horizontally */
+    max-width: 90%;
+    /* Adjust max-width for smaller screens */
+    box-shadow: none;
+    /* Remove shadow on mobile for cleaner look */
+    border: 1px solid #ddd;
+    /* Add a subtle border */
+  }
+}

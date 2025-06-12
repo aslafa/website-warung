@@ -1,0 +1,155 @@
+.signup-form-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  min-width: 350px;
+  /* Adjust as needed */
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 350px;
+  /* Typical width for Instagram form */
+  text-align: center;
+}
+
+h2 {
+  font-size: 17px;
+  color: #8e8e8e;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+.form-group {
+  margin-bottom: 6px;
+  /* Reduced margin for closer input fields */
+}
+
+.form-group input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  font-size: 14px;
+}
+
+.form-group input::placeholder {
+  color: #8e8e8e;
+}
+
+.social-login button:hover {
+  background-color: #e0e0e0;
+  margin-bottom: 6px;
+}
+
+.social-login button.facebook {
+  color: #1877f2;
+}
+
+.social-login button.google {
+  color: #ea4335;
+  /* Google red */
+}
+
+.social-login button i {
+  margin-right: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.signup-btn {
+  background-color: #d6ac3d;
+  /* Lighter gold for button */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 95%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #d6ac3d;
+  /* Darker gold on hover */
+}
+
+.punya-akun {
+  font-size: 15px;
+  color: #555;
+}
+
+.punya-akun a {
+  color: #d6ac3d;
+  /* Blue link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* For the Facebook icon */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+/* Media Queries for responsiveness */
+@media (max-width: 870px) {
+  .phone-mockup {
+    display: none;
+    /* Hide phone mockup on smaller screens */
+  }
+
+  .container {
+    flex-direction: column;
+    /* Stack elements vertically */
+    width: auto;
+    max-width: 400px;
+    /* Constrain width of the form */
+    border: 1px solid #dbdbdb;
+    /* Add border for form section */
+  }
+
+  .signup-form-wrapper {
+    padding: 30px 20px;
+    border: none;
+    /* Remove border from wrapper as it's now on container */
+  }
+
+  body {
+    background-color: #fff;
+    /* White background when phone is hidden */
+  }
+}
